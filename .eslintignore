@@ -1,0 +1,5 @@
+!.prettierrc.js
+!.eslintrc.js
+src/migration/
+gen/
+build/

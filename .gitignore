@@ -1,0 +1,5 @@
+/src/config.dev.ts
+/build/
+/node_modules/
+/.idea/
+/logs/

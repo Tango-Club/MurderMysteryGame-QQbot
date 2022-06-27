@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "types": [
+      "reflect-metadata",
+      "node",
+      "jest"
+    ],
+    "lib": [
+      "es5",
+      "es6",
+      "dom"
+    ],
+    "allowJs": true,
+    "target": "es5",
+    "esModuleInterop": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "./build",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "rootDir": ".",
+    "baseUrl": ".",
+    "sourceMap": true,
+    "plugins": [
+      {
+        "transform": "ts-transformer-keys/transformer"
+      },
+      {
+        "transform": "ts-optchain/transform"
+      }
+    ]
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "!node_modules/@types"
+  ]
+}
