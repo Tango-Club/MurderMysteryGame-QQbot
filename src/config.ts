@@ -1,24 +1,24 @@
-import {AvailableIntentsEventsEnum} from "qq-guild-bot";
+import { AvailableIntentsEventsEnum } from "qq-guild-bot";
 
 /*
 以下配置为默认配置，不可使用。在本地请自建config.dev.ts重载之。
 */
 export class BotConfig {
   constructor(
-      appID?: string,
-      token?: string,
-      sandbox?: boolean,
-      shards?: Array<number>,
-      intents?: Array<AvailableIntentsEventsEnum>,
-      maxRetry?: number
+    appID?: string,
+    token?: string,
+    sandbox?: boolean,
+    shards?: Array<number>,
+    intents?: Array<AvailableIntentsEventsEnum>,
+    maxRetry?: number
   ) {
     this.appID = appID ? appID : "appID";
     this.token = token ? token : "token";
     this.sandbox = sandbox ? sandbox : false;
     this.shards = shards;
     this.intents = intents
-        ? intents
-        : [AvailableIntentsEventsEnum.PUBLIC_GUILD_MESSAGES];
+      ? intents
+      : [AvailableIntentsEventsEnum.PUBLIC_GUILD_MESSAGES];
     this.maxRetry = maxRetry;
   }
 
